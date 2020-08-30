@@ -24,7 +24,7 @@
         "name": "ds-chief-f2fb4ff",
         "ref": "HEAD",
         "rev": "f2fb4ff57d1129c39fe7ab78ba27923cff88d55f",
-        "url": "https://github.com/makerdao/ds-chief"
+        "url": "https://github.com/CurioTeam/ds-chief"
       }
     },
     "ds-math_d0ef6d6": {
@@ -61,7 +61,7 @@
         "name": "ds-pause-2db7e84",
         "ref": "HEAD",
         "rev": "2db7e84a2cb47e621ccb02ff7e62b093a380a83f",
-        "url": "https://github.com/makerdao/ds-pause"
+        "url": "https://github.com/CurioTeam/ds-pause"
       }
     },
     "ds-proxy_4299be4": {
@@ -141,7 +141,7 @@
         "name": "ds-token-ae74f6d",
         "ref": "HEAD",
         "rev": "ae74f6d093ff8e121b706874f97b69b39f1fa5d9",
-        "url": "https://github.com/makerdao/ds-token"
+        "url": "https://github.com/CurioTeam/ds-token"
       }
     },
     "ds-value_f3dc6c8": {
@@ -173,57 +173,57 @@
     "dsr-manager_1f4c1e9": {
       "deps": {
         "ds-test": "ds-test_eb7148d",
-        "dss-deploy": "dss-deploy_a276b5b"
+        "dss-deploy": "dss-deploy_9a3dcae"
       },
       "name": "dsr-manager",
       "repo": {
         "name": "dsr-manager-1f4c1e9",
         "ref": "HEAD",
         "rev": "1f4c1e9dd30bd419062c6d8f57b145dd77267ae6",
-        "url": "https://github.com/makerdao/dsr-manager"
+        "url": "https://github.com/CurioTeam/dsr-manager"
       }
     },
     "dss-cdp-manager_e07b7b4": {
       "deps": {
         "ds-test": "ds-test_eb7148d",
-        "dss-deploy": "dss-deploy_a276b5b"
+        "dss-deploy": "dss-deploy_9a3dcae"
       },
       "name": "dss-cdp-manager",
       "repo": {
         "name": "dss-cdp-manager-e07b7b4",
         "ref": "HEAD",
         "rev": "e07b7b4933d49c8c7f90a5ace360de6cc39b1a36",
-        "url": "https://github.com/makerdao/dss-cdp-manager"
+        "url": "https://github.com/CurioTeam/dss-cdp-manager"
       }
     },
     "dss-deploy-pause-proxy-actions_2c53220": {
       "deps": {
         "ds-proxy": "ds-proxy_4299be4",
         "ds-test": "ds-test_eb7148d",
-        "dss-deploy": "dss-deploy_a276b5b"
+        "dss-deploy": "dss-deploy_9a3dcae"
       },
       "name": "dss-deploy-pause-proxy-actions",
       "repo": {
         "name": "dss-deploy-pause-proxy-actions-2c53220",
         "ref": "HEAD",
         "rev": "2c53220141d3485e83aa2dbad5e928431e837f47",
-        "url": "https://github.com/makerdao/dss-deploy-pause-proxy-actions"
+        "url": "https://github.com/CurioTeam/dss-deploy-pause-proxy-actions"
       }
     },
-    "dss-deploy_a276b5b": {
+    "dss-deploy_9a3dcae": {
       "deps": {
         "ds-auth": "ds-auth_434bf46",
         "ds-pause": "ds-pause_2db7e84",
         "ds-test": "ds-test_eb7148d",
-        "dss": "dss_b280b98",
+        "dss": "dss_d477d88",
         "esm": "esm_b168bb9"
       },
       "name": "dss-deploy",
       "repo": {
-        "name": "dss-deploy-a276b5b",
-        "ref": "HEAD",
-        "rev": "a276b5b145c564b465fbcf7adeb302f581762be1",
-        "url": "https://github.com/makerdao/dss-deploy"
+        "name": "dss-deploy-9a3dcae",
+        "ref": "curio-fork",
+        "rev": "9a3dcae5570adc5a5454ee1c6b06bdba3ba46ed0",
+        "url": "https://github.com/CurioTeam/dss-deploy"
       }
     },
     "dss-proxy-actions_f28dbc0": {
@@ -238,10 +238,10 @@
         "name": "dss-proxy-actions-f28dbc0",
         "ref": "HEAD",
         "rev": "f28dbc08eedfca588c8d9486c24587c80e382cd0",
-        "url": "https://github.com/makerdao/dss-proxy-actions"
+        "url": "https://github.com/CurioTeam/dss-proxy-actions"
       }
     },
-    "dss_b280b98": {
+    "dss_d477d88": {
       "deps": {
         "ds-test": "ds-test_eb7148d",
         "ds-token": "ds-token_ae74f6d",
@@ -249,10 +249,10 @@
       },
       "name": "dss",
       "repo": {
-        "name": "dss-b280b98",
-        "ref": "HEAD",
-        "rev": "b280b98e0c661d5d8effe2e9626e51978dab33ce",
-        "url": "https://github.com/makerdao/dss"
+        "name": "dss-d477d88",
+        "ref": "curio-fork",
+        "rev": "d477d88eb2e65534252c30dc0e2e82efbb93bb47",
+        "url": "https://github.com/CurioTeam/dss"
       }
     },
     "erc20_f322aac": {
@@ -275,7 +275,7 @@
         "name": "esm-b168bb9",
         "ref": "HEAD",
         "rev": "b168bb99784006248dea434a95c59c63b165abf9",
-        "url": "https://github.com/makerdao/esm"
+        "url": "https://github.com/CurioTeam/esm"
       }
     },
     "flipper-mom_9ba73a4": {
@@ -287,7 +287,7 @@
         "name": "flipper-mom-9ba73a4",
         "ref": "HEAD",
         "rev": "9ba73a4df3d4c5686f106a6a912155df679ca9b6",
-        "url": "https://github.com/makerdao/flipper-mom"
+        "url": "https://github.com/CurioTeam/flipper-mom"
       }
     },
     "ilk-registry_5995cde": {
@@ -299,7 +299,7 @@
         "name": "ilk-registry-5995cde",
         "ref": "HEAD",
         "rev": "5995cdec069020892d39b57404381f54ad01279a",
-        "url": "https://github.com/makerdao/ilk-registry"
+        "url": "https://github.com/CurioTeam/ilk-registry"
       }
     },
     "median_1964dc0": {
@@ -311,7 +311,7 @@
         "name": "median-1964dc0",
         "ref": "HEAD",
         "rev": "1964dc0ee98fa108625aa43907e199e41c806fc6",
-        "url": "https://github.com/makerdao/median"
+        "url": "https://github.com/CurioTeam/median"
       }
     },
     "mkr-authority_62380ee": {
@@ -323,7 +323,7 @@
         "name": "mkr-authority-62380ee",
         "ref": "HEAD",
         "rev": "62380eeef85ef990592063b85aa9fd07aca7aff5",
-        "url": "https://github.com/makerdao/mkr-authority"
+        "url": "https://github.com/CurioTeam/mkr-authority"
       }
     },
     "multicall_57967fc": {
@@ -335,7 +335,7 @@
         "name": "multicall-57967fc",
         "ref": "HEAD",
         "rev": "57967fce0ae1f9c6b6413345b36b40067a9a7700",
-        "url": "https://github.com/makerdao/multicall"
+        "url": "https://github.com/CurioTeam/multicall"
       }
     },
     "osm-mom_d09c1fa": {
@@ -348,7 +348,7 @@
         "name": "osm-mom-d09c1fa",
         "ref": "HEAD",
         "rev": "d09c1fa52c7fc82eda56f8856ebc531b7e63c7c6",
-        "url": "https://github.com/makerdao/osm-mom"
+        "url": "https://github.com/CurioTeam/osm-mom"
       }
     },
     "osm_ec26fd0": {
@@ -362,7 +362,7 @@
         "name": "osm-ec26fd0",
         "ref": "HEAD",
         "rev": "ec26fd0e081dc815ca50064130fba5cdfde0cddb",
-        "url": "https://github.com/makerdao/osm"
+        "url": "https://github.com/CurioTeam/osm"
       }
     },
     "proxy-registry_99f1702": {
@@ -375,7 +375,7 @@
         "name": "proxy-registry-99f1702",
         "ref": "HEAD",
         "rev": "99f1702e89b3f4b7012e5bfb6b58a41bdf06bc34",
-        "url": "https://github.com/makerdao/proxy-registry"
+        "url": "https://github.com/CurioTeam/proxy-registry"
       }
     },
     "testchain-medians_8e57fb8": {
@@ -388,7 +388,7 @@
         "name": "testchain-medians-8e57fb8",
         "ref": "HEAD",
         "rev": "8e57fb866332e95c99c26d23c22947b654de1da1",
-        "url": "https://github.com/makerdao/testchain-medians"
+        "url": "https://github.com/CurioTeam/testchain-medians"
       }
     },
     "token-faucet_2f83912": {
@@ -401,7 +401,7 @@
         "name": "token-faucet-2f83912",
         "ref": "HEAD",
         "rev": "2f839123ebf7cf9e084e20c0376752fa6fe961e5",
-        "url": "https://github.com/makerdao/token-faucet"
+        "url": "https://github.com/CurioTeam/token-faucet"
       }
     },
     "vote-proxy_8e997f3": {
@@ -414,7 +414,7 @@
         "name": "vote-proxy-8e997f3",
         "ref": "HEAD",
         "rev": "8e997f3943072366181a0052808c625a999e8733",
-        "url": "https://github.com/makerdao/vote-proxy"
+        "url": "https://github.com/CurioTeam/vote-proxy"
       }
     }
   },
@@ -428,7 +428,7 @@
       "ds-weth": "ds-weth_b5819d1",
       "dsr-manager": "dsr-manager_1f4c1e9",
       "dss-cdp-manager": "dss-cdp-manager_e07b7b4",
-      "dss-deploy": "dss-deploy_a276b5b",
+      "dss-deploy": "dss-deploy_9a3dcae",
       "dss-deploy-pause-proxy-actions": "dss-deploy-pause-proxy-actions_2c53220",
       "dss-proxy-actions": "dss-proxy-actions_f28dbc0",
       "flipper-mom": "flipper-mom_9ba73a4",
