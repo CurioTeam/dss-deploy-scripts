@@ -3,6 +3,46 @@
 A set of scripts that deploy [dss](http://github.com/CurioTeam/dss) to an
 Ethereum chain of your choosing.
 
+## Curio Deployment
+
+### Requirements:
+
+* Ubuntu 18.04 LTS
+* A user in the `sudoers` group
+
+### Creating a new user
+
+* Create a new user `adduser ubuntu`
+* Add the user to `sudoers` group `usermod -aG sudo ubuntu`
+* Optionally, if you don't want to enter your password each time the installation process asks, run `sudo visudo`
+* Add the following line at the end of the file: `ubuntu ALL=(ALL) NOPASSWD: ALL`
+
+### Preparing deployment environment
+* Install NIX environment `curl -L https://nixos.org/nix/install | sh`
+* Run this or login again to use Nix `. "$HOME/.nix-profile/etc/profile.d/nix.sh"`
+* Clone this repo and cd into it `git clone https://github.com/CurioTeam/dss-deploy-scripts && cd dss-deploy-scripts`
+* Drop into a Nix Bash shell with all dependency installed (will take 1-3 hours for the first run depending on your system) `nix-shell --pure`
+* Use ETH v3 encoded private key and copy JSON part to `./keystore/me.json`
+* Copy the password from the step above to `./keystore/pwd`
+
+### Deploy
+
+In the following script replace
+* `0x515e7e1b2546d9e2bbe571bd3d9405bc1c4dd701` with your address encoded into ETH v3 file
+* `https://kovan.infura.io/v3/your-infura-key` with a correct ETH RPC endpoint
+
+and run the following command:
+
+```sh
+ETH_FROM=0x515e7e1b2546d9e2bbe571bd3d9405bc1c4dd701 \
+ETH_PASSWORD=./keystore/pwd \
+ETH_KEYSTORE=./keystore \
+ETH_RPC_URL=https://kovan.infura.io/v3/your-infura-key \
+TMPDIR=/tmp \
+dss-deploy kovan -f ./config/custom.json
+```
+
+
 ## Description
 
 This repo is composed of two steps:
