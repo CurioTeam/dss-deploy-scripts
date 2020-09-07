@@ -1,6 +1,6 @@
 # DSS deployment scripts
 
-A set of scripts that deploy [dss](http://github.com/makerdao/dss) to an
+A set of scripts that deploy [dss](http://github.com/CurioTeam/dss) to an
 Ethereum chain of your choosing.
 
 ## Description
@@ -65,14 +65,14 @@ Below is the expected structure of such a config file:
   "omniaFromAddr": "<Address being used by Omnia Service (only for testchain)>",
   "omniaAmount": "<Amount in ETH to be sent to Omnia Address (only for testchain)>",
   "pauseDelay": "<Delay of Pause contract in seconds>",
-  "vat_line": "<General debt ceiling in DAI unit>",
+  "vat_line": "<General debt ceiling in CSC unit>",
   "vow_wait": "<Flop delay in seconds>",
-  "vow_sump": "<Flop fixed bid size in DAI unit>",
+  "vow_sump": "<Flop fixed bid size in CSC unit>",
   "vow_dump": "<Flop initial lot size in MKR unit>",
-  "vow_bump": "<Flap fixed lot size in DAI unit>",
-  "vow_hump": "<Flap Surplus buffer in DAI unit>",
+  "vow_bump": "<Flap fixed lot size in CSC unit>",
+  "vow_hump": "<Flap Surplus buffer in CSC unit>",
   "jug_base": "<Base component of stability fee in percentage per year (e.g. 2.5)>",
-  "pot_dsr": "<Dai Savings Rate in percentage per year (e.g. 2.5)>",
+  "pot_dsr": "<Csc Savings Rate in percentage per year (e.g. 2.5)>",
   "end_wait": "<Global Settlement cooldown period in seconds>",
   "esm_pit": "<Pit address to send MKR to be burnt when ESM is fired>",
   "esm_min": "<Minimum amount to trigger ESM in MKR unit>",
@@ -106,8 +106,8 @@ Below is the expected structure of such a config file:
       "ilks": {
         "A": {
           "mat": "<Liquidation ratio value in percentage (e.g. 150)>",
-          "line": "<Debt ceiling value in DAI unit>",
-          "dust": "<Min amount of debt a CDP can hold in DAI unit>"
+          "line": "<Debt ceiling value in CSC unit>",
+          "dust": "<Min amount of debt a CDP can hold in CSC unit>"
           "duty": "<Collateral component of stability fee in percentage per year (e.g. 2.5)>",
           "chop": "<Liquidation penalty value in percentage (e.g. 12.5)>",
           "lump": "<Liquidation Quantity in Collateral Unit>",
@@ -180,7 +180,7 @@ nix-shell --pure
 You can even run deploy scripts without having to clone this repo:
 
 ```
-nix run -f https://github.com/makerdao/dss-deploy-scripts/tarball/master -c dss-deploy testchain
+nix run -f https://github.com/CurioTeam/dss-deploy-scripts/tarball/master -c dss-deploy testchain
 ```
 
 Dependencies are managed through a central repository referenced in
@@ -206,8 +206,8 @@ dapp2nix clone-recursive contracts
 
 ## Additional Documentation
 
-- `dss-deploy` [source code](https://github.com/makerdao/dss-deploy)
-- `dss` is documented in the [wiki](https://github.com/makerdao/dss/wiki) and in [DEVELOPING.md](https://github.com/makerdao/dss/blob/master/DEVELOPING.md)
+- `dss-deploy` [source code](https://github.com/CurioTeam/dss-deploy)
+- `dss` is documented in the [wiki](https://github.com/CurioTeam/dss/wiki) and in [DEVELOPING.md](https://github.com/CurioTeam/dss/blob/master/DEVELOPING.md)
 
 ## TODO
 
