@@ -3,7 +3,7 @@
 A set of scripts that deploy [dss](http://github.com/CurioTeam/dss) to an
 Ethereum chain of your choosing.
 
-## Curio Deployment
+## Curio Deployment Guide
 
 ### Requirements:
 
@@ -41,6 +41,15 @@ ETH_RPC_URL=https://kovan.infura.io/v3/your-infura-key \
 TMPDIR=/tmp \
 dss-deploy kovan -f ./config/custom.json
 ```
+
+## Kovan Deployment
+
+* The complete list of the deployed contracts: https://github.com/CurioTeam/dss-deploy-scripts/blob/master/out/addresses.json
+* The rest of the deployment artifacts: https://github.com/CurioTeam/dss-deploy-scripts/tree/master/out
+
+You can claim some test CT1 and MKR tokens at the faucet using etherscan.io interface. To do this go to the [faucet](https://kovan.etherscan.io/address/0xa92ece98fd547d8052f92c7c7a5a6058475a592a#writeContract) and scroll down to the `gulp` method. Specify a token address, click `Write` button and then confirm the transaction using Metamask. Use the following addresses for test tokens:
+* CT1: 0xBfF814EFBd42b2c9739750876EEc0451F9Bb9555
+* MKR: 0x638D3d19aF9E1AcE2944976A1A99bF01Cf2FAdAB
 
 
 ## Description
